@@ -34,17 +34,44 @@
       font-weight: bold;
 
     }
+    form {
+      background-color: whitesmoke;
+      width: 70%;
+      margin: 0 auto;
+      padding: 50px;
+      border-radius: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 </style>
 <body>
-    <h1>Select your gender</h1>
+    <h1>Fill up the Information</h1>
+    <form>
+    <fieldset style="background: #f6f8ff; border: 2px solid #4238ca; border-radius: 10px;">
+        <legend>Registration Form</legend>
+        <label for="firstname">Firstname</label>
+        <input type="text" id="firstname"><br /><br />
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname"><br /><br />
+        <label for="address">Town/Municipality</label> <br>
+        <select id="address" class="js-example-basic-multiple">
+            <option value="">-- Select Town/Municipality --</option>
+            <option value="cavitecity">Cavite City</option>
+            <option value="noveleta">Noveleta</option>
+            <option value="kawit">Kawit</option>
+            <option value="rosario">Rosario</option>
+            <option value="bacoor">Bacoor</option>
+        </select>
+        <br>
+        <br>
     <label for="gender">Gender</label> <br>
     <select id="gender" class="js-example-basic-multiple">
         <option value="">-- Select Gender --</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="other">Other</option>
-      </select>
-
+    </select>
+    </fieldset>
+    </form>
 
       <script type="text/javascript">
         $(document).ready(function() {
